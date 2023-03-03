@@ -1,6 +1,6 @@
 class Table {
   constructor(arr) {
-    this.reader = arr[0];
+    this.header = arr[0];
     arr.shift();
     this.rows = arr;
   }
@@ -10,7 +10,7 @@ class Table {
   }
 
   get ColumnCount() {
-    return this.reader.length;
+    return this.header.length;
   }
 }
 
